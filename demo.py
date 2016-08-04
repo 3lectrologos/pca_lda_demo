@@ -12,6 +12,7 @@ def after():
 ALPHA = 0.6
 MSIZE = 8
 LWIDTH = 3
+LIM = 100
 
 m1 = np.asarray([-0.5, 0])
 s1 = np.asarray([[0.03, 0], [0, 0.6]])
@@ -37,42 +38,42 @@ plt.plot(x1[:, 0], x1[:, 1], 'ko', markersize=MSIZE, alpha=ALPHA)
 plt.plot(x2[:, 0], x2[:, 1], 'ko', markersize=MSIZE, alpha=ALPHA)
 after()
 
-plt.plot([0, 0], [-5, 5], 'g-', linewidth=LWIDTH)
+plt.plot([0, 0], [-LIM, LIM], 'g-', linewidth=LWIDTH)
 plt.plot(x1[:, 0], x1[:, 1], 'ko', markersize=MSIZE, alpha=ALPHA)
 plt.plot(x2[:, 0], x2[:, 1], 'ko', markersize=MSIZE, alpha=ALPHA)
 after()
 
-plt.plot([0, 0], [-5, 5], 'g-', linewidth=LWIDTH)
+plt.plot([0, 0], [-LIM, LIM], 'g-', linewidth=LWIDTH)
 plt.plot(x11[:, 0], x11[:, 1], 'ko', markersize=MSIZE, alpha=ALPHA)
 plt.plot(x21[:, 0], x21[:, 1], 'ks', markersize=MSIZE, alpha=ALPHA)
 after()
 
-plt.plot([-5, 5], [0, 0], 'm-', linewidth=LWIDTH)
+plt.plot([-LIM, LIM], [0, 0], 'm-', linewidth=LWIDTH)
 plt.plot(x1[:, 0], x1[:, 1], 'ko', markersize=MSIZE, alpha=ALPHA)
 plt.plot(x2[:, 0], x2[:, 1], 'ko', markersize=MSIZE, alpha=ALPHA)
 after()
 
-plt.plot([-5, 5], [0, 0], 'm-', linewidth=LWIDTH)
+plt.plot([-LIM, LIM], [0, 0], 'm-', linewidth=LWIDTH)
 plt.plot(x12[:, 0], x12[:, 1], 'ko', markersize=MSIZE, alpha=ALPHA)
 plt.plot(x22[:, 0], x22[:, 1], 'ks', markersize=MSIZE, alpha=ALPHA)
 after()
 
-plt.plot([0, 0], [-5, 5], 'g-', linewidth=LWIDTH)
+plt.plot([0, 0], [-LIM, LIM], 'g-', linewidth=LWIDTH)
 plt.plot(x1[:, 0], x1[:, 1], 'bo', markersize=MSIZE, alpha=ALPHA)
 plt.plot(x2[:, 0], x2[:, 1], 'rs', markersize=MSIZE, alpha=ALPHA)
 after()
 
-plt.plot([0, 0], [-5, 5], 'g-', linewidth=LWIDTH)
+plt.plot([0, 0], [-LIM, LIM], 'g-', linewidth=LWIDTH)
 plt.plot(x11[:, 0], x11[:, 1], 'bo', markersize=MSIZE, alpha=ALPHA)
 plt.plot(x21[:, 0], x21[:, 1], 'rs', markersize=MSIZE, alpha=ALPHA)
 after()
 
-plt.plot([-5, 5], [0, 0], 'm-', linewidth=LWIDTH)
+plt.plot([-LIM, LIM], [0, 0], 'm-', linewidth=LWIDTH)
 plt.plot(x1[:, 0], x1[:, 1], 'bo', markersize=MSIZE, alpha=ALPHA)
 plt.plot(x2[:, 0], x2[:, 1], 'rs', markersize=MSIZE, alpha=ALPHA)
 after()
 
-plt.plot([-5, 5], [0, 0], 'm-', linewidth=LWIDTH)
+plt.plot([-LIM, LIM], [0, 0], 'm-', linewidth=LWIDTH)
 plt.plot(x12[:, 0], x12[:, 1], 'bo', markersize=MSIZE, alpha=ALPHA)
 plt.plot(x22[:, 0], x22[:, 1], 'rs', markersize=MSIZE, alpha=ALPHA)
 after()
