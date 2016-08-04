@@ -1,6 +1,18 @@
 import numpy as np
 import matplotlib.pylab as plt
 
+
+def after():
+    plt.axis('equal')
+    plt.xlim([-2, 2])
+    plt.ylim([-2, 2])
+    plt.show()
+
+
+ALPHA = 0.6
+MSIZE = 8
+LWIDTH = 3
+
 m1 = np.asarray([-0.5, 0])
 s1 = np.asarray([[0.03, 0], [0, 0.6]])
 x1 = np.random.multivariate_normal(m1, s1, 50)
@@ -16,18 +28,6 @@ x12 = x1.copy()
 x12[:, 1] = 0
 x22 = x2.copy()
 x22[:, 1] = 0
-
-ALPHA = 0.6
-MSIZE = 8
-LWIDTH = 3
-
-
-def after():
-    plt.axis('equal')
-    plt.xlim([-2, 2])
-    plt.ylim([-2, 2])
-    plt.show()
-
 
 plt.plot(x1[:, 0], x1[:, 1], 'bo', markersize=MSIZE, alpha=ALPHA)
 plt.plot(x2[:, 0], x2[:, 1], 'rs', markersize=MSIZE, alpha=ALPHA)
